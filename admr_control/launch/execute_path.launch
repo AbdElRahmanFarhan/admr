@@ -1,0 +1,7 @@
+<launch>
+	<node name="record" pkg="rosbag" type="record" args="record /desired_path_x /desired_path_y /real_states /odom_raw_sync /filtered_odom /noisy_odom /cmd_vel /imu_raw_sync /imu_noisy_sync / -O $(find admr_control)/scripts/bags/integ.bag"/>
+
+  <node name="control_architecture" pkg="admr_control" type="control_architecture.py" output="screen"/>
+
+  <node name="ekf" pkg="admr_control" type="ekf.py" output="screen"/>
+</launch>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+<world name="diff_robot_world">
+<include>
+<uri>model://sun</uri>
+</include>
+<include>
+<uri>model://ground_plane</uri>
+</include>
+<include>
+
+<uri>model://campus2</uri>
+<pose>14.197271 24.992161 0 0 0 1.570796326794897</pose>
+</include>
+</world>
+</sdf>
